@@ -11,11 +11,14 @@ Fork the Cryo3D repo on Github:
 - Having trouble? Visit [Github's site](https://help.github.com/articles/fork-a-repo/)
 
 ####Local
-Create a `/workspaces` directory
+Create a `/workspaces` directory and cd into it
 
 Clone your fork of the Cryo3D repo into your workspaces directory
+```
+$ git clone {URL_of_your_fork}
+```
 
-Type `$ git remote -v` into your command line to check for a list of remotes synced to this local repo.  Ensure origin links back to your own fork.
+Use `$ git remote -v` to check for a list of remotes synced to this local repo.  Ensure origin links back to your own fork.
 
 Set an upstream path to sync back with the master branch of the original Cryo3D repo (you will use your own fork with branching for development and create pull requests back into the "master" repo.  This will ensure safe, consistent code via code reviews)
 
@@ -32,4 +35,10 @@ $ git pull upstream
 **Make sure to checkout a new branch (on your own fork) with each major story/feature**
 
 ####Docker
+Install Docker.  Reference Docker's setup instructions [here](http://docs.docker.com/windows/started/).  Links to help with all OS's can be found from this page.
+
+Keep in mind that virtualization must be enabled.  This means a little extra setup work for OSX users.
+
+
+
 
