@@ -6,9 +6,9 @@
 Install Git if you do not already have it.  Click [here](https://help.github.com/articles/set-up-git/#platform-all) for setup instructions for all operating systems.
 
 Fork the Cryo3D repo on Github:
--Find the Cryo3D repository [here] (https://github.com/cryo3d/cryo3d)
--In the top right corner of the page, click '**Fork**'
--Having trouble? Visit [Github's site](https://help.github.com/articles/fork-a-repo/)
+- Find the Cryo3D repository [here] (https://github.com/cryo3d/cryo3d)
+- In the top right corner of the page, click '**Fork**'
+- Having trouble? Visit [Github's site](https://help.github.com/articles/fork-a-repo/)
 
 ####Local
 Create a `/workspaces` directory
