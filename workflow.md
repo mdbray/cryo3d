@@ -67,9 +67,9 @@ For the purposes of setting up a simple server, install Go.
 
 A walkthrough for multiple OS's can be found [here] (https://golang.org/doc/install)
 
-After local installation, set your $GOROOT, $PATH, and $GOPATH environment variables.
+After local installation, set your `$GOROOT`, `$PATH`, and `$GOPATH` environment variables.  Steps for doing so will vary slightly depending on your OS.  More information on this can be found [here] (https://golang.org/doc/code.html)
 
-If you followed the steps above, make a folder inside workspaces that will store all your go code.  Set your GOPATH to point to this location
+If you followed all steps up to this point, make a folder inside `/workspaces` that will store all your go code.  Set your $GOPATH to point to this location
 
 For example, `~/workspaces/gocode` (in my case)
 
