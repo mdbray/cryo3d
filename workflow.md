@@ -39,6 +39,15 @@ Install Docker.  Reference Docker's setup instructions [here](http://docs.docker
 
 Keep in mind that virtualization must be enabled.  This means a little extra setup work for OSX users.
 
+For a simple 'Hello World' program with Docker, navigate [here] (https://github.com/docker-library/hello-world)
+A detail explanation of how this works can be found [here] (https://github.com/docker-library/docs/tree/master/hello-world)
+
+To stop/remove all Docker containers:
+```
+$ docker stop $(docker ps -a -q)
+$ docker rm $(docker ps -a -q)
+```
+
 
 
 
