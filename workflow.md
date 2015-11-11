@@ -1,5 +1,11 @@
 ##Development:
-*For questions, reach out to Michelle*
+*Questions? Get in contact with:*
+- Michelle Bray 		michelle.bray@colorado.edu
+- Ali Hakimi			ali.hakimi@colorado.edu
+- Annie Kelly			annie.kelly@colorado.edu
+- Chris Gray			chris.gray@colorado.edu
+- Lincoln Samelson		lincoln.samelson@colorado.edu
+- Olivia Abrant			olivia.abrant@colorado.edu
 
 ###Initial Setup
 ####Github
@@ -40,7 +46,13 @@ Install Docker.  Reference Docker's setup instructions [here](http://docs.docker
 Keep in mind that virtualization must be enabled.  This means a little extra setup work for OSX users.
 
 For a simple 'Hello World' program with Docker, navigate [here] (https://github.com/docker-library/hello-world)
+
 A detail explanation of how this works can be found [here] (https://github.com/docker-library/docs/tree/master/hello-world)
+
+For a list of all running containers:
+```
+docker ps -l
+```
 
 To stop/remove all Docker containers:
 ```
