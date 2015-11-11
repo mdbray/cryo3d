@@ -51,14 +51,57 @@ A detail explanation of how this works can be found [here] (https://github.com/d
 
 For a list of all running containers:
 ```
-docker ps -l
+$ docker ps -l
 ```
+
+`$ echo $DOCKER_HOST` within the container to bind the docker host to exposed port (8080 in this case) 
 
 To stop/remove all Docker containers:
 ```
 $ docker stop $(docker ps -a -q)
 $ docker rm $(docker ps -a -q)
 ```
+
+####Working with Go
+For the purposes of setting up a simple server, install Go.
+
+A walkthrough for multiple OS's can be found [here] (https://golang.org/doc/install)
+
+After local installation, set your $GOROOT, $PATH, and $GOPATH environment variables.
+
+If you followed the steps above, make a folder inside workspaces that will store all your go code.  Set your GOPATH to point to this location
+
+For example, `~/workspaces/gocode` (in my case)
+
+From the root of your go directory (`/gocode` in my case), create `src`, `bin`, and `pkg` folders 
+
+For the sake of avoiding naming collisions with Go package management, set up a directory structure like so:
+```
+$GOPATH/src/github.com/{github_username}
+```
+
+Create the appropriate folders.
+
+Fork the hello_Docker branch from the master repo into your own.  Clone your copy of this branch into `$GOPATH/src/github.com/{github_username}`
+
+
+A helpful walkthrough for doing this on OS X can be found [here] (http://www.raulmurciano.com/articles/setting-up-go-for-development/)
+
+`cd` into root (base of the working directory).
+
+To build an image using the Dockerfile (Note: the `-t` flag tags the resulting image with the name hello_Docker), run:
+```
+$ docker build -t hello_Docker .
+```
+
+Next, run a container from the resulting image with
+```
+docker run --publish 8080:8080 --name test --rm hello_Docker
+```
+
+The server is now up and running at `http://{$DOCKER_HOST}:8080/`.  Make sure to replace the last colon and following four digits in your `$DOCKER_HOST` with our exposed port number (`:8080`).
+
+For now, "Hello world!" should be printed to the screen.
 
 
 
