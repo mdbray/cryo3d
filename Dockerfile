@@ -10,6 +10,8 @@ ADD . /go/src/github.com/mdbray/cryo3d
 # Build the outyet command inside the container.
 # (You may fetch or manage dependencies here,
 # either manually or with a tool like "godep".)
+# UPDATE THIS TO INCLUDE YOUR GIT USERNAME INSTEAD OF MINE
+# THIS WILL EVENTUALLY BE CRYO3D ONCE INITIAL FILESTRUCTURE IN MASTER IS ESTABLISHED
 RUN go install github.com/mdbray/cryo3d
 
 # Run the outyet command by default when the container starts.
