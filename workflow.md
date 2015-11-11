@@ -96,7 +96,7 @@ $ docker build -t hello_Docker .
 
 Next, run a container from the resulting image with
 ```
-docker run --publish 8080:8080 --name test --rm hello_Docker
+$ docker run --publish 8080:8080 --name test --rm hello_Docker
 ```
 
 The server is now up and running at `http://{$DOCKER_HOST}:8080/`.  Make sure to replace the last colon and following four digits in your `$DOCKER_HOST` with our exposed port number (`:8080`).
